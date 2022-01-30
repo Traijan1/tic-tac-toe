@@ -52,7 +52,7 @@ export class TicTacToe {
     private checkForWinner(sign: Sign): void {
         let didWon = false;
 
-        for(let i = 0; i < 3; i += 3) {
+        for(let i = 0; i < 9; i += 3) {
             if(this.field[i] == sign && this.field[i + 1] == sign && this.field[i + 2] == sign) {
                 didWon = true;
                 break;
